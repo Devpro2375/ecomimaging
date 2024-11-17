@@ -9,14 +9,16 @@ import ModalQuickview from "@/components/Modal/ModalQuickview";
 import ModalCompare from "@/components/Modal/ModalCompare";
 import CountdownTimeType from "@/type/CountdownType";
 import { countdownTime } from "@/store/countdownTime";
+import ShopMainMenu from "@/components/Shop/ShopMainMenu";
+import TopNavOne from "@/components/Home/TopNavOne";
 
 const serverTimeLeft: CountdownTimeType = countdownTime();
 
 const instrument = Instrument_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Anvogue",
-  description: "Multipurpose eCommerce Template",
+  title: "ImagingGifts",
+  description: "Best Camera Shop",
 };
 
 export default function RootLayout({
@@ -28,7 +30,13 @@ export default function RootLayout({
     <GlobalProvider>
       <html lang="en">
         <body className={instrument.className}>
+          <TopNavOne
+            props="style-marketplace bg-[#263587] border-b border-surface1"
+            slogan="New customers save 10% with the code GET10"
+          />
+          <ShopMainMenu />
           {children}
+
           <ModalCart serverTimeLeft={serverTimeLeft} />
           <ModalWishlist />
           <ModalSearch />

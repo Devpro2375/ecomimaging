@@ -1,31 +1,27 @@
-import React from "react";
-import TopNavOne from "@/components/Header/TopNav/TopNavOne";
-import Collection from "@/components/Marketplace/Collection";
-import Benefit from "@/components/Home1/Benefit";
-import Brand from "@/components/Home1/Brand";
-import Footer from "@/components/Footer/Footer";
-import ModalNewsletter from "@/components/Modal/ModalNewsletter";
-import MenuMarketplace from "@/components/Header/Menu/MenuMarketplace";
-import SliderMarketplace from "@/components/Slider/SliderMarketplace";
-import BannerAbove from "@/components/Marketplace/BannerAbove";
-import productData from "@/data/Product.json";
-import BestSeller from "@/components/Marketplace/BestSeller";
-import BannerBelow from "@/components/Marketplace/BannerBelow";
-import TopProduct from "@/components/Marketplace/TopProduct";
-import Recommend from "@/components/Marketplace/Recommend";
-import NewsInsight from "@/components/Home3/NewsInsight";
-import Deal from "@/components/Marketplace/Deal";
 import blogData from "@/data/Blog.json";
+import productData from "@/data/Product.json";
+import ModalNewsletter from "@/components/Modal/ModalNewsletter";
+
+
+import SliderMarketplace from "@/components/Home/Slider";
+import BannerAbove from "@/components/Home/BannerAbove";
+import Deal from "@/components/Home/Deal";
+import Collection from "@/components/Home/Collection";
+import BestSeller from "@/components/Home/BestSeller";
+import BannerBelow from "@/components/Home/BannerBelow";
+import TopProduct from "@/components/Home/TopProduct";
+import Recommend from "@/components/Home/Recommend";
+import NewsInsight from "@/components/Home/NewsInsight";
+import Benefit from "@/components/Home/Benefit";
+import Brand from "@/components/Home/Brand";
 
 export default function Home() {
   return (
     <>
-      <TopNavOne
-        props="style-marketplace bg-[#263587] border-b border-surface1"
-        slogan="New customers save 10% with the code GET10"
-      />
+
+
       <div id="header" className="relative w-full">
-        <MenuMarketplace />
+
         <SliderMarketplace />
       </div>
       <BannerAbove />
@@ -38,7 +34,7 @@ export default function Home() {
       <NewsInsight data={blogData} start={18} limit={21} />
       <Benefit props="md:py-[60px] py-10 border-b border-line" />
       <Brand />
-      <Footer />
+
       {/* <ModalNewsletter /> */}
     </>
   );

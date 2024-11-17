@@ -229,11 +229,11 @@ const ShopBreadCrumb1: React.FC<Props> = ({
 
   return (
     <>
-    <div className="  py-4 ">
+    <div>
 
 
     </div>
-      <div className="shop-product breadcrumb1 lg:py-4 md:py-2 py-2">
+      <div className="shop-product breadcrumb1 py-2">
         <div className="container">
           <div className="flex max-md:flex-wrap max-md:flex-col-reverse gap-y-8">
             <div className="sidebar lg:w-1/4 md:w-1/3 w-full md:pr-12">
