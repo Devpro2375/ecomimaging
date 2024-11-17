@@ -3,9 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import ShopBreadCrumb1 from "@/components/Shop/ShopBreadCrumb1";
-import ShopMainMenu from "@/components/Shop/ShopMainMenu";
 import productData from "@/data/Product.json";
-import TopNavOne from "@/components/Home/TopNavOne";
 import Breadcrumb from "@/components/Home/Heading";
 
 export default function BreadCrumb1() {

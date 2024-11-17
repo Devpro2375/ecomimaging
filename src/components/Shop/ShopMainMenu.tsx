@@ -1566,7 +1566,7 @@ const ShopMainMenu = () => {
                                     </div>
                                   </li>
                                 </ul>
-                              </div>  
+                              </div>  git 
                               <div className="nav-item">
                                 <div className="text-button-uppercase pb-2">
                                   New product

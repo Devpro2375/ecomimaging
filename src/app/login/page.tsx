@@ -1,21 +1,17 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import TopNavOne from "@/components/Header/TopNav/TopNavOne";
-import MenuOne from "@/components/Header/Menu/MenuOne";
+
 import Breadcrumb from "@/components/Home/Heading";
-import Footer from "@/components/Footer/Footer";
+
 import * as Icon from "@phosphor-icons/react/dist/ssr";
 
 const Login = () => {
   return (
     <>
-      <TopNavOne
-        props="style-one bg-black"
-        slogan="New customers save 10% with the code GET10"
-      />
+
       <div id="header" className="relative w-full">
-        <MenuOne props="bg-transparent" />
+   
         <Breadcrumb heading="Login" subHeading="Login" />
       </div>
       <div className="login-block md:py-20 py-10">
@@ -86,7 +82,7 @@ const Login = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      
     </>
   );
 };
