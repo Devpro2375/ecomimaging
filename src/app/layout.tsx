@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Instrument_Sans } from "next/font/google";
 import "@/styles/styles.scss";
 import GlobalProvider from "./GlobalProvider";
 import ModalCart from "@/components/Modal/ModalCart";
@@ -14,7 +13,7 @@ import TopNavOne from "@/components/Home/TopNavOne";
 
 const serverTimeLeft: CountdownTimeType = countdownTime();
 
-const instrument = Instrument_Sans({ subsets: ["latin"] });
+
 
 export const metadata: Metadata = {
   title: "ImagingGifts",
@@ -29,7 +28,7 @@ export default function RootLayout({
   return (
     <GlobalProvider>
       <html lang="en">
-        <body className={instrument.className}>
+        <body>
           <TopNavOne
             props="style-marketplace bg-[#263587] border-b border-surface1"
             slogan="New customers save 10% with the code GET10"

@@ -2,8 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import TopNavOne from "@/components/Header/TopNav/TopNavOne";
-import MenuOne from "@/components/Header/Menu/MenuOne";
+
 import Breadcrumb from "@/components/Home/Heading";
 
 import * as Icon from "@phosphor-icons/react/dist/ssr";
