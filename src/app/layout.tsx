@@ -10,6 +10,7 @@ import CountdownTimeType from "@/type/CountdownType";
 import { countdownTime } from "@/store/countdownTime";
 import ShopMainMenu from "@/components/Shop/ShopMainMenu";
 import TopNavOne from "@/components/Home/TopNavOne";
+import Footer from "@/components/Home/Footer";
 
 const serverTimeLeft: CountdownTimeType = countdownTime();
 
@@ -41,6 +42,7 @@ export default function RootLayout({
           <ModalSearch />
           <ModalQuickview />
           <ModalCompare />
+          <Footer />
         </body>
       </html>
     </GlobalProvider>
